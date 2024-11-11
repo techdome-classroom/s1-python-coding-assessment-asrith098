@@ -18,7 +18,7 @@ class Solution:
             dfs(r, c + 1)  
             dfs(r, c - 1) 
 
-        land_count = 0
+        island_count = 0
         
         for r in range(rows):
             for c in range(cols):
@@ -27,4 +27,4 @@ class Solution:
                     dfs(r, c)
                     island_count += 1  
 
-        return land_count
+        return island_count
